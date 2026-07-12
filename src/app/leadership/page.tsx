@@ -2,7 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 // Ensure 'Linkedin' is spelled exactly like this:
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from 'lucide-react'; 
+import { Mail } from 'lucide-react';
 
 const leaders = [
   {
