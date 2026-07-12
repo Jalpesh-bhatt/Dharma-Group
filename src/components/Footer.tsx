@@ -130,7 +130,7 @@ export default function Footer() {
                   size={20}
                 />
 
-                <p>+91 98765 43210</p>
+                <p>+91 9727670007</p>
 
               </div>
 
