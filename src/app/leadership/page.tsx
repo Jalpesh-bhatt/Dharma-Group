@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from 'lucide-react';
 
 const leaders = [
   {
