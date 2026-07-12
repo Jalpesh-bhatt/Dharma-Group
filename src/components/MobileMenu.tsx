@@ -18,7 +18,7 @@ export default function MobileMenu({
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Businesses", href: "/businesses" },
-    { name: "Gallery", href: "/Gallery" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
