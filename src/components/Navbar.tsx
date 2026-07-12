@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
-  const [open, setOpen] =useState(false);
+  const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,9 +22,8 @@ export default function Navbar() {
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Businesses", href: "/businesses" },
-     { title: "Gallery", href: "/Gallery" },
+    { title: "Gallery", href: "/Gallery" },
     { title: "Contact", href: "/contact" },
-   
   ];
 
   return (
@@ -38,47 +37,34 @@ export default function Navbar() {
           }`}
         >
           <div className="h-20 px-8 flex items-center justify-between">
-
             {/* Logo */}
             <Link href="/" className="group">
-
               <h1 className="text-3xl font-black tracking-tight">
-
                 <span className="text-red-700 dark:text-red-400">
                   DHARMA
                 </span>
-
               </h1>
-
               <p className="text-[11px] uppercase tracking-[0.55em] text-gray-500 dark:text-gray-400 group-hover:text-red-500 transition">
                 GROUP
               </p>
-
             </Link>
 
             {/* Desktop Menu */}
             <nav className="hidden lg:flex items-center gap-10">
-
               {links.map((item) => (
-
                 <Link
                   key={item.title}
                   href={item.href}
                   className="relative font-semibold text-gray-700 dark:text-gray-200 hover:text-red-600 transition group"
                 >
                   {item.title}
-
                   <span className="absolute left-0 -bottom-2 h-0.5 w-0 bg-red-600 transition-all duration-300 group-hover:w-full" />
-
                 </Link>
-
               ))}
-
             </nav>
 
             {/* Right */}
             <div className="flex items-center gap-3">
-
               <ThemeToggle />
 
               <Link
@@ -90,13 +76,12 @@ export default function Navbar() {
 
               <button
                 onClick={() => setOpen(true)}
-                className="lg:hidden p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-800 transition"
+                // Added text-gray-900 dark:text-white to ensure hamburger lines are visible
+                className="lg:hidden p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-800 transition text-gray-900 dark:text-white"
               >
                 <Menu size={28} />
               </button>
-
             </div>
-
           </div>
         </div>
       </header>
