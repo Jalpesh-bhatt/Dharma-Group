@@ -18,6 +18,7 @@ export default function MobileMenu({
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Businesses", href: "/businesses" },
+    { name: "Gallery", href: "/Gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -47,12 +48,12 @@ export default function MobileMenu({
                 <h2 className="text-xl font-black text-red-700 dark:text-red-400">
                   DHARMA
                 </h2>
-                <p className="text-xs tracking-[0.3em] text-gray-500">
+                <p className="text-xs tracking-[0.3em] text-gray-500 dark:text-gray-400">
                   GROUP
                 </p>
               </div>
 
-              <button onClick={onClose}>
+              <button onClick={onClose} className="text-gray-900 dark:text-white">
                 <X size={28} />
               </button>
             </div>
@@ -63,7 +64,8 @@ export default function MobileMenu({
                   key={link.name}
                   href={link.href}
                   onClick={onClose}
-                  className="block text-lg font-semibold hover:text-red-600 transition"
+                  // Added text-gray-900 dark:text-white to ensure visibility
+                  className="block text-lg font-semibold text-gray-900 dark:text-white hover:text-red-600 transition"
                 >
                   {link.name}
                 </Link>
